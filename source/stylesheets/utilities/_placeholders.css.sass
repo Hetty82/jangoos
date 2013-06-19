@@ -1,0 +1,35 @@
+%clearfix,
+.clearfix
+  *display: inline-block
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+%abbreviate
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.hide-text
+  overflow: hidden
+  text-indent: -9999px
+  text-align: left
+
+.hide
+  display: none
+
+.hidden
+  visibility: hidden
+
+.box,
+%box
+  padding: 30px 20px
+  background: #aaa
+  background: rgba(0,0,0,0.3)
+  +border-radius(8px)
+
+  +max-width(550px)
+    padding: 15px 10px

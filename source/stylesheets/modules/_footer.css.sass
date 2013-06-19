@@ -1,0 +1,36 @@
+.mod-footer
+  position: absolute
+  width: 100%
+  padding: 10px 0
+  left: 0
+  bottom: 0
+  font-weight: 200
+  background: #155763
+  background: rgba(11,72,107,0.8)
+
+  .contact
+    margin-left: 12%
+    float: left
+
+  .email
+    padding-left: 20px
+    background: inline-image("i_email_footer.png") no-repeat 0 2px
+
+  .attribution
+    float: right
+    text-align: right
+    margin-right: 4%
+
+  +max-width(550px)
+    .contact
+      margin-left: 4%
+
+  +max-width(350px)
+    .contact
+      float: none
+      margin-bottom: 20px
+
+    .attribution
+      float: none
+      text-align: left
+      margin-left: 4%

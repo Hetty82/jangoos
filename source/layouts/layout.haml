@@ -1,0 +1,41 @@
+!!! 5
+
+%html{:lang => 'nl'}
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1'}
+    %title Bistro Jan Goos
+
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'all'
+
+  %body{:class => page_classes}
+    %header.mod-header
+      %h1
+        Bistro Jan Goos
+        .sizebox
+        = link_to 'home', 'index.html'
+
+      %nav
+        %ul
+          %li= link_to 'home', '/'
+          %li= link_to 'menukaart', 'menu.html'
+          %li= link_to 'facebook', 'https://www.facebook.com/pages/Jan-Goos/633295966687480?fref=ts', :class => 'facebook'
+          -# %li= link_to 'vrienden', 'vrienden.html'
+          -# %li= link_to 'evenementen', 'evenementen.html'
+          -# %li= link_to 'agenda', 'agenda.html'
+          -# %li= link_to 'contact', 'contact.html'
+
+    .layout
+      = yield
+
+    %footer.mod-footer
+      .contact
+        %p Tel: 0320 264 531
+        %p Parkhaven 9, Lelystad
+        = link_to 'email ons!', 'mailto:tkonijnenburg@gmail.com', :class => 'email'
+
+      .attribution
+        %p logo by zwiet.com
+        %p= link_to 'website by hetty82.nl', 'http://www.hetty82.nl'
+        %p Bistro Jan Goos &copy; 2013

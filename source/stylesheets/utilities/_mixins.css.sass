@@ -1,0 +1,22 @@
+@mixin max-width($width)
+  @media (max-width: $width)
+    @content
+
+@mixin min-width($width)
+  @media (min-width: $width)
+    @content
+
+@mixin max-height($height)
+  @media (max-height: $height)
+    @content
+
+@mixin min-height($height)
+  @media (min-height: $height)
+    @content
+
+@mixin calc($property, $expression)
+  #{$property}: -moz-calc(#{$expression})
+  #{$property}: -o-calc(#{$expression})
+  #{$property}: -webkit-calc(#{$expression})
+  #{$property}: calc(#{$expression})
+

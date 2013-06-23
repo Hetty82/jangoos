@@ -19,12 +19,12 @@
       %nav
         %ul
           %li= link_to 'home', '/'
-          %li= link_to 'menukaart', 'menu.html'
-          %li= link_to 'facebook', 'https://www.facebook.com/pages/Jan-Goos/633295966687480?fref=ts', :class => 'facebook'
+          %li= link_to 'menu<span>kaart</span>', 'menu.html'
+          %li= link_to 'info<span>rmatie</span>', 'info.html'
+          %li= link_to '<span>facebook</span>', 'https://www.facebook.com/pages/Jan-Goos/633295966687480?fref=ts', :class => 'facebook'
           -# %li= link_to 'vrienden', 'vrienden.html'
           -# %li= link_to 'evenementen', 'evenementen.html'
           -# %li= link_to 'agenda', 'agenda.html'
-          -# %li= link_to 'contact', 'contact.html'
 
     .layout
       = yield

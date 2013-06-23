@@ -15,14 +15,15 @@ body
   &.menu
     background-image: image-url("bg_menu.jpg")
 
+  &.info
+    background-image: image-url("bg_info.jpg")
+
   +max-width(350px)
     padding-bottom: 140px
 
 .layout
-  padding-top: 80px
-  padding-left: 12%
-  padding-right: 4%
+  @extend %clearfix
+  padding: 80px 4% 0 12%
 
   +max-width(550px)
-    padding-top: 40px
-    padding-left: 4%
+    padding: 40px 4% 0

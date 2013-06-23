@@ -1,0 +1,43 @@
+.mod-info
+  @extend %box
+  max-width: 500px
+  float: right
+  padding-bottom: 10px
+
+  h2
+    margin-bottom: 13px
+    padding-bottom: 13px
+    font-weight: 500
+    font-size: 2em
+    +text-shadow(2px 2px 2px rgba(#000,0.7))
+
+  p
+    margin-bottom: 16px
+    font-size: 16px
+    line-height: 1.8
+    +text-shadow(2px 2px 2px rgba(#000,0.7))
+
+  img
+    width: 100%
+    max-width: 460px
+    margin-bottom: 16px
+
+  a
+    display: inline-block
+    position: relative
+    padding-left: 30px
+    text-decoration: underline
+
+    &:before
+      content: ""
+      background: inline-image('i_facebook.png')
+      background-size: 100%
+      width: 20px
+      height: 20px
+      display: block
+      top: 4px
+      left: 5px
+      position: absolute
+
+  +max-width(600px)
+    float: none
